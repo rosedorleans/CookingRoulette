@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page All meals{% endblock %}
+
+{% block body %}
+    </nav>
+    <main class="main-list">
+        <h3>Tous les plats enregistrés ({{ count }}) :</h3>
+        <ul>
+            {% for meal in meals %}
+                <li>{{ meal.nom }}</li>
+            {% endfor %}
+            <p><b>...</b></p>
+        </ul>
+    </main>
+
+{% endblock body %}
