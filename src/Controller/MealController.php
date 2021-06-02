@@ -15,7 +15,7 @@ class MealController extends AbstractController {
     /**
      * @var MealRepository
      */
-    private $repository;
+    private $repository; 
 
     public function __construct(MealRepository $repository) {
 
